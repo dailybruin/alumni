@@ -1,0 +1,24 @@
+--- 
+layout: default 
+--- 
+
+{% include header.html %}
+
+<!-- Section -->
+<section class="main alt">
+	<header>
+		<h1>News</h1>
+	</header>
+	<div class="inner style2">
+		<div class="row">
+			{% for post in site.posts %}
+				<div class="4u">
+					<span class="image fit">
+						<a href="{{ post.url }}"><img src="images/{{ post.pic }}" alt="" /></a>
+					</span>
+					<p>{{ post.title }}</p>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
