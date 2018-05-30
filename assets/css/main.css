@@ -2041,6 +2041,9 @@
 		background-color: #4a98e2;
 		color: #ffffff !important;
 	}
+	.button.two {
+		background-color: #ffb300;
+	}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2050,6 +2053,9 @@
 			background-color: #60a5e6;
 			color: #ffffff !important;
 		}
+		.button.two:hover {
+			background-color: #ffcc59;
+		}
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
@@ -2057,6 +2063,9 @@
 		button:active,
 		.button:active {
 			background-color: #348bde;
+		}
+		.button.two:active {
+			background-color: #ffb030;
 		}
 
 		input[type="submit"].alt,
