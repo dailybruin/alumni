@@ -7,11 +7,11 @@
 /* Banner */
 
 #banner {
-  @include vendor("display", "flex");
-  @include vendor("flex-direction", "column");
-  @include vendor("align-items", "center");
-  @include vendor("justify-content", "center");
-  background-image: url("../../images/banner.jpg");
+  @include vendor('display', 'flex');
+  @include vendor('flex-direction', 'column');
+  @include vendor('align-items', 'center');
+  @include vendor('justify-content', 'center');
+  background-image: url('../../images/kerck.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -24,8 +24,8 @@
   > .content {
     @include color-typography(accent1);
     @include vendor(
-      "transition",
-      ("transform 0.5s ease-in-out", "opacity 0.5s ease-in-out")
+      'transition',
+      ('transform 0.5s ease-in-out', 'opacity 0.5s ease-in-out')
     );
     padding: 2.75rem;
     width: 100%;
@@ -78,10 +78,10 @@
   }
 
   &:before {
-    @include vendor("pointer-events", "none");
-    @include vendor("transition", "opacity 2s ease-in-out");
-    @include vendor("transition-delay", "0.5s");
-    content: "";
+    @include vendor('pointer-events', 'none');
+    @include vendor('transition', 'opacity 2s ease-in-out');
+    @include vendor('transition-delay', '0.5s');
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -93,8 +93,8 @@
   }
 
   &:after {
-    @include vendor("pointer-events", "none");
-    content: "";
+    @include vendor('pointer-events', 'none');
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -115,7 +115,7 @@
 
   body.is-loading & {
     > .content {
-      @include vendor("transform", "scale(1.05)");
+      @include vendor('transform', 'scale(1.05)');
       opacity: 0;
     }
 
