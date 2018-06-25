@@ -1,62 +1,23 @@
 <!doctype html>
 <html>
 
-<head>
-  <title>Daily Bruin Alumni</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ site.baseurl }}/main.css">
-</head>
+{% include head.html %}
+
 
 <body>
 
   <!-- Wrapper -->
   <div id="wrapper">
 
+    {% include header.html %}
+
     {{ content }}
 
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="icons">
-        <li>
-          <a href="http://www.facebook.com/dailybruin" class="icon alt fa-facebook">
-            <span class="label">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.twitter.com/dailybruin" class="icon alt fa-twitter">
-            <span class="label">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.instagram.com/dailybruin" class="icon alt fa-instagram">
-            <span class="label">Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.linkedin.com/groups/2499544 " class="icon alt fa-linkedin">
-            <span class="label">LinkedIn</span>
-          </a>
-        </li>
-      </ul>
-      <p class="copyright">
-        <a href="mailto:alumni@dailybruin.com">alumni@dailybruin.com</a>
-        <br>
-        <a href="http://www.dailybruin.com">Daily Bruin</a>
-      </p>
-    </footer>
+    {% include footer.html %}
 
   </div>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" integrity="sha256-rsPUGdUPBXgalvIj4YKJrrUlmLXbOb6Cp7cdxn1qeUc=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js" integrity="sha256-o7QFslEPuitprNVNQJrtEo/jXNfwgn1BTgVR2BJ5VOI=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js" integrity="sha256-/CW3X7P8i0J1ZBO+OH4NemAoExJSg9I4RVGWHXPqeE4=" crossorigin="anonymous"></script>
-  <script src="js/jquery.scrolly.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js" integrity="sha256-3e+NvOq+D/yeJy1qrWpYkEUr6SlOCL5mHpc2nZfX74E=" crossorigin="anonymous"></script>
-  <script src="js/util.js"></script>
-  <script src="js/main.js"></script>
+{% include scripts.html %}
 
 </body>
 
