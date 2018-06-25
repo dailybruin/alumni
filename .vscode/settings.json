@@ -1,4 +1,9 @@
 {
-  "editor.formatOnSave": false,
-  "editor.formatOnPaste": false
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
+  "files.associations": {
+    "*.html": "jekyll"
+  }
 }
