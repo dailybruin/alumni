@@ -6,15 +6,15 @@
 
 /* Button */
 
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
 button,
 .button {
-  @include vendor("appearance", "none");
+  @include vendor('appearance', 'none');
   @include vendor(
-    "transition",
-    "background-color #{_duration(transition)} ease-in-out, color #{_duration(transition)} ease-in-out"
+    'transition',
+    'background-color #{_duration(transition)} ease-in-out, color #{_duration(transition)} ease-in-out'
   );
   border-radius: _size(border-radius);
   border: 0;
@@ -36,7 +36,7 @@ button,
     @include icon;
 
     &:before {
-      content: "\f178";
+      content: '\f178';
       float: right;
       line-height: inherit;
       margin: 0 -0.25rem 0 0.5rem;
@@ -72,7 +72,7 @@ button,
 
   &.disabled,
   &:disabled {
-    @include vendor("pointer-events", "none");
+    @include vendor('pointer-events', 'none');
     opacity: 0.25;
   }
 }
@@ -80,9 +80,9 @@ button,
 @mixin color-button($p: null) {
   $highlight: _palette($p, highlight);
 
-  input[type="submit"],
-  input[type="reset"],
-  input[type="button"],
+  input[type='submit'],
+  input[type='reset'],
+  input[type='button'],
   button,
   .button {
     background-color: _palette($highlight, bg);
@@ -116,6 +116,18 @@ button,
         }
       }
     }
+  }
+}
+
+.button.two {
+  background-color: #ffb300;
+
+  &:hover {
+    background-color: #ffcc59;
+  }
+
+  &:active {
+    background-color: #ffb030;
   }
 }
 
