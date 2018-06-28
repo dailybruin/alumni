@@ -5,11 +5,13 @@ layout: default
 {% include header.html %}
 
 <section class="main alt">
-    <header>
-        <img src="images/{{ layout.pic }}" alt="" />
-        <h3>{{ page.title }}</h3>
-    </header>
-    <div class="inner style2">
-       {{ content }}
+  <header>
+    <div class="image main">
+        <img src="{{ site.baseurl }}/images/{{ page.pic }}" alt="" />
     </div>
+    <h3>{{ page.title }}</h3>
+  </header>
+  <div class="inner style2">
+    {{ content }}
+  </div>
 </section>
