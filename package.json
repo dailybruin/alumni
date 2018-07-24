@@ -18,12 +18,15 @@
     "gatsby-plugin-emotion": "^2.0.0-beta.2",
     "gatsby-plugin-sharp": "^2.0.0-beta.6",
     "gatsby-plugin-typescript": "^2.0.0-beta.6",
+    "gatsby-plugin-typography": "^1.7.19",
     "gatsby-source-filesystem": "^2.0.1-beta.8",
     "gatsby-transformer-sharp": "^2.1.1-beta.5",
     "normalize.css": "^8.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-emotion": "^9.2.6",
-    "typescript": "^2.9.2"
+    "react-typography": "^0.16.13",
+    "typescript": "^2.9.2",
+    "typography": "^0.16.17"
   }
 }

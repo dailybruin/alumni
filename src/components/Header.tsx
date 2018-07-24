@@ -1,5 +1,14 @@
 import * as React from 'react';
 import { css } from 'emotion';
+import styled from 'react-emotion';
+
+const HeaderLink = styled('a')`
+  color: inherit;
+  text-decoration: none;
+  :hover {
+    color: #4a98e2;
+  }
+`;
 
 export default function Header() {
   return (
@@ -9,9 +18,11 @@ export default function Header() {
         grid-template-columns: 1fr 1fr;
         position: relative;
         width: 100%;
+        padding: 2.5rem 1.75rem 0;
       `}
     >
-      <div
+      <HeaderLink
+        href="/"
         className={css`
           justify-self: start;
         `}
@@ -25,17 +36,18 @@ export default function Header() {
           Daily Bruin
         </span>{' '}
         Alumni Network
-      </div>
+      </HeaderLink>
       <nav
         className={css`
-          justify-self: end;
+          display: flex;
+          justify-content: space-between;
         `}
       >
-        <a href="">About</a>
-        <a href="">Join Us</a>
-        <a href="">Give Back</a>
-        <a href="">News & Events</a>
-        <a href="">Contact</a>
+        <HeaderLink href="">About</HeaderLink>
+        <HeaderLink href="">Join Us</HeaderLink>
+        <HeaderLink href="">Give Back</HeaderLink>
+        <HeaderLink href="">News & Events</HeaderLink>
+        <HeaderLink href="">Contact</HeaderLink>
       </nav>
     </header>
   );
