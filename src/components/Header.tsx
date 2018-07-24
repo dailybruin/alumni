@@ -46,6 +46,7 @@ export default function Header() {
       >
         <HeaderLink to="/about">About</HeaderLink>
         <HeaderLink to="/join-us">Join Us</HeaderLink>
+        <HeaderLink to="/volunteer">Volunteer</HeaderLink>
         <HeaderLink to="/give-back">Give Back</HeaderLink>
         <HeaderLink to="news-and-events">News & Events</HeaderLink>
         <HeaderLink to="/contact">Contact</HeaderLink>
