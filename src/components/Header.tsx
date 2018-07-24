@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
 import { css } from 'emotion';
 import styled from 'react-emotion';
 
-const HeaderLink = styled('a')`
+const HeaderLink = styled(Link)`
   color: inherit;
   text-decoration: none;
   :hover {
@@ -22,7 +23,7 @@ export default function Header() {
       `}
     >
       <HeaderLink
-        href="/"
+        to="/"
         className={css`
           justify-self: start;
         `}
@@ -43,11 +44,11 @@ export default function Header() {
           justify-content: space-between;
         `}
       >
-        <HeaderLink href="">About</HeaderLink>
-        <HeaderLink href="">Join Us</HeaderLink>
-        <HeaderLink href="">Give Back</HeaderLink>
-        <HeaderLink href="">News & Events</HeaderLink>
-        <HeaderLink href="">Contact</HeaderLink>
+        <HeaderLink to="/about">About</HeaderLink>
+        <HeaderLink to="/join-us">Join Us</HeaderLink>
+        <HeaderLink to="/give-back">Give Back</HeaderLink>
+        <HeaderLink to="news-and-events">News & Events</HeaderLink>
+        <HeaderLink to="/contact">Contact</HeaderLink>
       </nav>
     </header>
   );
