@@ -17,13 +17,14 @@ export default function Header() {
       className={css`
         display: grid;
         grid-template-columns: 1fr 1fr;
-        position: relative;
         width: 100%;
-        padding: 2.5rem 1.75rem 0;
+        padding: 1.1rem 1.2rem;
         position: sticky;
         top: 0;
         background-color: #fff;
         z-index: 100;
+        box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.125);
+        border-bottom-color: #f3f3f3;
       `}
     >
       <HeaderLink
