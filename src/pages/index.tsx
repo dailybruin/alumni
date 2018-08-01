@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { css } from 'emotion';
 import 'normalize.css';
-import Img from 'gatsby-image';
 
 import CoverPhoto from '../components/CoverPhoto';
 import HomePageSection from '../components/HomePageSection';
@@ -17,13 +15,6 @@ export const query = graphql`
       }
     }
   }
-`;
-
-const style = css`
-  position: 'absolute';
-  top: 0;
-  left: 0;
-  height: 100vh;
 `;
 
 const IndexPage = ({ data }) => {

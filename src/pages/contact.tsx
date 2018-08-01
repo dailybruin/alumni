@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import PageContent from '../components/PageContainer';
 
 export const query = graphql`
-  query ContantPageQuery {
+  query ContactPageQuery {
     featureImage: file(relativePath: { regex: "/kerck-2.jpg/" }) {
       childImageSharp {
         fluid(maxHeight: 320, cropFocus: CENTER) {
