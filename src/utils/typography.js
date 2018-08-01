@@ -6,8 +6,12 @@ const typography = new Typography({
       name: 'Raleway',
       styles: ['400', '800'],
     },
+    {
+      name: 'Source Sans Pro',
+      styles: ['300'],
+    },
   ],
-  bodyFontFamily: ['Raleway', 'sans-serif'],
+  bodyFontFamily: ['Raleway', 'Helvetica Neue', 'Helvetica', 'sans-serif'],
 });
 
 export default typography;

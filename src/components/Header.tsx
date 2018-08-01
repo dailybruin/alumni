@@ -20,6 +20,10 @@ export default function Header() {
         position: relative;
         width: 100%;
         padding: 2.5rem 1.75rem 0;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 100;
       `}
     >
       <HeaderLink

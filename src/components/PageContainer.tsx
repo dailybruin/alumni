@@ -26,7 +26,6 @@ export default function PageContent(props: PageContentProps) {
       >
         <div
           className={css`
-            content: '';
             display: inline-block;
             width: 6.5rem;
             height: 0.25rem;
@@ -64,10 +63,14 @@ export default function PageContent(props: PageContentProps) {
         />
         <div
           className={css`
+            color: #3f3f3f;
             padding: 3rem 4rem;
             > *:last-child {
               margin-bottom: 0;
             }
+            font-weight: 300;
+            font-family: 'Source Sans Pro';
+            line-height: 1.6;
           `}
         >
           {props.children}
