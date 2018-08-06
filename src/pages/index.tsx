@@ -63,7 +63,15 @@ const IndexPage = ({ data }) => {
         </ul>
       </HomePageSection>
 
-      <HomePageSection title="News" />
+      <HomePageSection title="Whar are alumni up to?">
+        <a
+          className="twitter-timeline"
+          data-height="600"
+          href="https://twitter.com/tannerbwalters/lists/ucla-daily-bruin-alumni?ref_src=twsrc%5Etfw"
+        >
+          A Twitter List by tannerbwalters
+        </a>
+      </HomePageSection>
       <Footer
         githubName="alumni"
         developers={['Nathan Smith']}
