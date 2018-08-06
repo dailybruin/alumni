@@ -5,6 +5,7 @@ import 'normalize.css';
 
 import CoverPhoto from '../components/CoverPhoto';
 import HomePageSection from '../components/HomePageSection';
+import Footer from '../components/Footer';
 
 export const query = graphql`
   query IndexQuery {
@@ -62,25 +63,12 @@ const IndexPage = ({ data }) => {
         </ul>
       </HomePageSection>
 
-      <HomePageSection title="Connect" theme={1}>
-        <ul
-          className={css`
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            max-width: 58rem;
-            display: flex;
-            justify-content: space-evenly;
-            list-style: none;
-          `}
-        >
-          <li>Join Us</li>
-          <li>Facebook</li>
-          <li>LinkedIn</li>
-        </ul>
-      </HomePageSection>
-
       <HomePageSection title="News" />
+      <Footer
+        githubName="alumni"
+        developers={['Nathan Smith']}
+        copyrightYear={2018}
+      />
     </>
   );
 };
