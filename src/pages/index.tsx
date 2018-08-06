@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import { css } from 'emotion';
 import 'normalize.css';
 
 import CoverPhoto from '../components/CoverPhoto';
@@ -21,46 +22,65 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <CoverPhoto image={data.image.childImageSharp.fluid} />
-      <section>
-        <h2>Header</h2>
+      <HomePageSection title="Welcome">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-          praesentium quae blanditiis autem explicabo beatae dicta dolorum
-          nihil, in animi corrupti deleniti est ea sint itaque veniam
-          voluptatibus nobis saepe?
+          Thousands of UCLA students have called Kerckhoff Hall home for the
+          past century. In that time, the Daily Bruin has trained young
+          journalists and produced generations of media-savvy Bruins. As the
+          organization enters its second century, we want to support and foster
+          that endeavor.
         </p>
-        <h3>Subheader</h3>
+        <h3>Mission</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-          accusamus reiciendis laborum dolorem natus? Dolorum laborum similique
-          quas iusto! Tempora quo officia laboriosam quisquam perferendis
-          tenetur temporibus minima necessitatibus quidem.
+          The Daily Bruin Alumni Network will actively engage the alumni of the
+          Daily Bruin to serve as a robust community for all former staff
+          members, in support of each other and The Bruin. The DBAN will provide
+          funding, mentorship and professional development programs for aspiring
+          student-journalists at UCLA, ensuring the excellence and longevity of
+          The Bruin. The DBAN will encourage students to reach beyond UCLA,
+          supporting community programs to advance news literacy and the free
+          press.
         </p>
         <button>Learn More</button>
-      </section>
-      {/* <Img /> */}
-      <section>
-        <h2>Header</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
-          praesentium quae blanditiis autem explicabo beatae dicta dolorum
-          nihil, in animi corrupti deleniti est ea sint itaque veniam
-          voluptatibus nobis saepe?
-        </p>
-        <button>Give</button>
-      </section>
-      <section>
-        <h2>Connect</h2>
-      </section>
-      <section>
-        <h2>ALUMNI SPOTLIGHT</h2>
-      </section>
-      <section>
-        <h2>WHAT ARE ALUMNI UP TO?</h2>
-      </section>
-      <section>
-        <h2>News</h2>
-      </section>
+      </HomePageSection>
+
+      <HomePageSection title="Connect" theme={1}>
+        <ul
+          className={css`
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 58rem;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+          `}
+        >
+          <li>Join Us</li>
+          <li>Facebook</li>
+          <li>LinkedIn</li>
+        </ul>
+      </HomePageSection>
+
+      <HomePageSection title="Connect" theme={1}>
+        <ul
+          className={css`
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 58rem;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+          `}
+        >
+          <li>Join Us</li>
+          <li>Facebook</li>
+          <li>LinkedIn</li>
+        </ul>
+      </HomePageSection>
+
+      <HomePageSection title="News" />
     </>
   );
 };

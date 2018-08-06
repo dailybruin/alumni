@@ -84,6 +84,8 @@ export default function PageContent(props: PageContentProps) {
               margin: 0 0 1rem 0;
               text-transform: uppercase;
               letter-spacing: 0.05em;
+              width: 100%;
+              text-align: center;
             }
 
             h1 {

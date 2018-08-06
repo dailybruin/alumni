@@ -7,7 +7,8 @@
   "author": "Daily Bruin Online <online@dailybruin.com>",
   "license": "AGPL-3.0",
   "scripts": {
-    "start": "gatsby develop"
+    "start": "gatsby develop -p 1234",
+    "build": "gatsby build"
   },
   "dependencies": {
     "babel-plugin-emotion": "^9.2.6",
@@ -16,7 +17,7 @@
     "gatsby": "^2.0.0-beta.54",
     "gatsby-image": "^2.0.0-beta.6",
     "gatsby-plugin-emotion": "^2.0.0-beta.2",
-    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-react-helmet": "^3.0.0-beta.4",
     "gatsby-plugin-sharp": "^2.0.0-beta.6",
     "gatsby-plugin-typescript": "^2.0.0-beta.6",
     "gatsby-plugin-typography": "^1.7.19",

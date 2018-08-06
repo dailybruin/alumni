@@ -1,4 +1,5 @@
 import Typography from 'typography';
+import { injectGlobal } from 'emotion';
 
 const typography = new Typography({
   googleFonts: [
@@ -13,5 +14,11 @@ const typography = new Typography({
   ],
   bodyFontFamily: ['Raleway', 'Helvetica Neue', 'Helvetica', 'sans-serif'],
 });
+
+injectGlobal`
+  body {
+    background-color: #f3f3f3;
+  }
+`;
 
 export default typography;
