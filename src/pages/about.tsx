@@ -151,8 +151,13 @@ export default function ContactPage({ data }) {
           </li>
         </ul>
         <h2>Alumni Spotlight</h2>
-        <FeatureQuote speaker="Matea Gold" speakerClassInfo="1994-95 editor-in-chief, class of '96" speakerCurrentInfo="Political enterprise and investigations editor, The Washington Post"
-         image={speakerImage} quote="The Daily Bruin launched my career as a professional journalist. On the day I walked into the newsroom in Kerckhoff Hall as a freshman, I began learning how to cover a large, diverse community and how to apply principles of fairness and rigor to high-stakes stories. I saw the huge impact that a student newspaper could have in shaping not just campus discourse, but major national news events. I often tell aspiring reporters that the only way to learn how to be a journalist is to do the work, day in and day out. That’s what I had the chance to do at the Daily Bruin, and I will be forever grateful for the experience." />
+        <FeatureQuote
+          speaker="Matea Gold"
+          speakerClassInfo="1994-95 editor-in-chief, class of '96"
+          speakerCurrentInfo="Political enterprise and investigations editor, The Washington Post"
+          image={speakerImage}
+          quote="The Daily Bruin launched my career as a professional journalist. On the day I walked into the newsroom in Kerckhoff Hall as a freshman, I began learning how to cover a large, diverse community and how to apply principles of fairness and rigor to high-stakes stories. I saw the huge impact that a student newspaper could have in shaping not just campus discourse, but major national news events. I often tell aspiring reporters that the only way to learn how to be a journalist is to do the work, day in and day out. That’s what I had the chance to do at the Daily Bruin, and I will be forever grateful for the experience."
+        />
       </PageContent>
     </>
   );

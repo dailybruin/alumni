@@ -63,7 +63,7 @@ const IndexPage = ({ data }) => {
         </ul>
       </HomePageSection>
 
-      <HomePageSection title="Whar are alumni up to?">
+      <HomePageSection title="What are alumni up to?">
         <a
           className="twitter-timeline"
           data-height="600"
