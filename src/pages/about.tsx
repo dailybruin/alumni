@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 
 import Header from '../components/Header';
-import PageContent from '../components/PageContainer';
+import PageContainer from '../components/PageContainer';
 import FeatureQuote from '../components/FeatureQuote';
 
 export const query = graphql`
@@ -31,7 +31,7 @@ export default function ContactPage({ data }) {
   return (
     <>
       <Header />
-      <PageContent title="About" featureImage={featureImage}>
+      <PageContainer title="About" featureImage={featureImage}>
         <p>
           The Daily Bruin Alumni Network (the "DBAN") will actively engage the
           alumni of the Daily Bruin to serve as a robust community for all
@@ -158,7 +158,7 @@ export default function ContactPage({ data }) {
           image={speakerImage}
           quote="The Daily Bruin launched my career as a professional journalist. On the day I walked into the newsroom in Kerckhoff Hall as a freshman, I began learning how to cover a large, diverse community and how to apply principles of fairness and rigor to high-stakes stories. I saw the huge impact that a student newspaper could have in shaping not just campus discourse, but major national news events. I often tell aspiring reporters that the only way to learn how to be a journalist is to do the work, day in and day out. That’s what I had the chance to do at the Daily Bruin, and I will be forever grateful for the experience."
         />
-      </PageContent>
+      </PageContainer>
     </>
   );
 }

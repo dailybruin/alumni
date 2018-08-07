@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 
 interface PageContentProps {
   title: string;
-  featureImage: any;
+  featureImage?: any;
   children?: React.ReactNode;
 }
 
@@ -55,12 +55,14 @@ export default function PageContent(props: PageContentProps) {
           border-radius: 4px;
         `}
       >
-        <Img
-          fluid={props.featureImage}
-          className={css`
-            border-radius: 4px;
-          `}
-        />
+        {!!props.featureImage && (
+          <Img
+            fluid={props.featureImage}
+            className={css`
+              border-radius: 4px;
+            `}
+          />
+        )}
         <div
           className={css`
             color: #3f3f3f;
