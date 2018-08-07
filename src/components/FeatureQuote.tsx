@@ -10,7 +10,7 @@ interface FeatureQuote {
   quote: string;
 }
 
-export default function FeatureQuote(props: any) {
+export default function FeatureQuote(props: FeatureQuote) {
   console.log(props.image);
   return (
     <section

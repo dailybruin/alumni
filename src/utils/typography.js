@@ -1,5 +1,6 @@
 import Typography from 'typography';
 import { injectGlobal } from 'emotion';
+import 'normalize.css';
 
 const typography = new Typography({
   googleFonts: [

@@ -1,15 +1,23 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import { css } from 'emotion';
-import 'normalize.css';
+import Img from 'gatsby-image';
 
+import Button from '../components/Button';
 import CoverPhoto from '../components/CoverPhoto';
 import HomePageSection from '../components/HomePageSection';
 import Footer from '../components/Footer';
 
 export const query = graphql`
   query IndexQuery {
-    image: file(relativePath: { regex: "/kerck.jpg/" }) {
+    coverphoto: file(relativePath: { regex: "/kerck.jpg/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    classOf2018: file(relativePath: { regex: "/class-of-18-newspapers.jpg/" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -22,7 +30,7 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
   return (
     <>
-      <CoverPhoto image={data.image.childImageSharp.fluid} />
+      <CoverPhoto image={data.coverphoto.childImageSharp.fluid} />
       <HomePageSection title="Welcome">
         <p>
           Thousands of UCLA students have called Kerckhoff Hall home for the
@@ -42,7 +50,8 @@ const IndexPage = ({ data }) => {
           supporting community programs to advance news literacy and the free
           press.
         </p>
-        <button>Learn More</button>
+        <Button>Learn More</Button>
+        <Img fluid={data.classOf2018.childImageSharp.fluid} />
       </HomePageSection>
 
       <HomePageSection title="Connect" theme={1}>

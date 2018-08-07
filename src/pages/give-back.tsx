@@ -1,41 +1,36 @@
 import * as React from 'react';
+import { graphql } from 'gatsby';
 import Header from '../components/Header';
 import PageContainer from '../components/PageContainer';
-import styled from 'react-emotion';
+import FeatureQuote from '../components/FeatureQuote';
 
-export default function GiveBackPage() {
+export const query = graphql`
+  query GiveBackPageQuery {
+    featureImage: file(relativePath: { regex: "/db-staff.jpg/" }) {
+      childImageSharp {
+        fluid(maxHeight: 320, cropFocus: CENTER) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    speakerImage: file(relativePath: { regex: "/crittendon.jpg/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
+
+export default function GiveBackPage({ data }) {
+  const featureImage = data.featureImage.childImageSharp.fluid;
+  const speakerImage = data.speakerImage.childImageSharp.fluid;
+
   return (
     <>
       <Header />
-      <PageContainer title="Give Back">
-        <h2>Volunteer</h2>
-        <p>
-          Thank you for your interest in joining our alumni committee! Alumni
-          involvement is critical in our successful launch and we welcome your
-          skills and help in building the infrastructure of our alumni network
-          and in presenting the first-ever Daily Bruin Alumni Reunion on October
-          5, 2018 in Westwood.
-        </p>
-        <p>Here are the projects we are working on:</p>
-        <h3>2018 Reunion and 2019 Centennial</h3>
-        <p>
-          From invitation logistics to coordination with the Daily Bruin alumni
-          director, we are looking for help in staging our kickoff events. We
-          are particularly interested in Los Angeles-based volunteers.
-        </p>
-        <h3>Alumni Network Development</h3>
-        <p>
-          Help us build the long-term components of the alumni group, including
-          drafting bylaws and preparing for the election of the first board and
-          officers. Subcommittees will work on developing specific program
-          components, including mentorship, fundraising and the directory.
-        </p>
-        <p>
-          Please send Tanner Walters an email at{' '}
-          <a href="mailto:alumni@dailybruin.com">alumni@dailybruin.com</a> if
-          you are interested in getting involved.
-        </p>
-
+      <PageContainer title="Give Back" featureImage={featureImage}>
         <h2>Daily Bruin Support Fund</h2>
         <p>
           Gifts to UCLA can be{' '}
@@ -50,7 +45,6 @@ export default function GiveBackPage() {
           facilitate your specific situation. Most corporate matches are
           eligible with this fund.
         </p>
-
         <h2>UCLA Student Media</h2>
         <p>
           The Daily Bruin is part of UCLA Student Media, which is overseen by
@@ -69,17 +63,18 @@ export default function GiveBackPage() {
           <a href="https://donate.uclastudentmedia.com/">this website</a> to
           give directly to the Daily Bruin.
         </p>
-
         <h2>Long-term Endowment</h2>
         <p>
           An endowment to supplement the Daily Bruin Support Fund would act as a
           means to help alleviate cuts The Bruin has undergone to its
           professional staff and operations. This would help provide academic
           scholarships for student journalists. Please contact Lawrence Ma (‘95)
-          at <a href="mailto:lorenzoma@me.com">lorenzoma@me.com</a> with
-          interest or questions.
+          at{' '}
+          <a href="mailto:LawrenceMa@alumni.ucla.edu">
+            LawrenceMa@alumni.ucla.edu
+          </a>{' '}
+          with interest or questions.
         </p>
-
         <h2>Other Ways to Help</h2>
         <p>
           There is a wealth of journalistic and professional knowledge among
@@ -89,6 +84,13 @@ export default function GiveBackPage() {
           news literacy on campus and in the greater Los Angeles community and
           always appreciate in-kind donations to help further that cause.
         </p>
+        <FeatureQuote
+          quote="Writing for the Daily Bruin got me out about campus and helped me to meet lots of people. I enjoyed the camaraderie in the newsroom and learning all about my new university. I also enjoyed honing my writing ability and the art of interviewing – skills that have helped me immensely in my 35 years as a lawyer."
+          speaker="John Crittendon"
+          speakerClassInfo="1977-78 staff reporter, class of '78"
+          speakerCurrentInfo="Trademark and copyright lawyer, Cooley LLP; Adjunct assistant professor, UCLA Law"
+          image={speakerImage}
+        />
       </PageContainer>
     </>
   );
