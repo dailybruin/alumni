@@ -48,7 +48,13 @@ export default function HomePageSection(props: any) {
           {props.title}
         </h2>
       </header>
-      {props.children}
+      <div
+        className={css`
+          text-align: center;
+        `}
+      >
+        {props.children}
+      </div>
     </section>
   );
 }
