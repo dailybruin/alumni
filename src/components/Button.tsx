@@ -2,6 +2,7 @@ import styled from 'react-emotion';
 
 const Button = styled('button')`
   border-radius: 4px;
+  border: 0;
   cursor: pointer;
   font-size: 0.75rem;
   height: 3rem;
