@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { css } from 'emotion';
 import styled from 'react-emotion';
+import MobilePopup from './MobilePopup';
 
 const HeaderLink = styled(Link)`
   color: inherit;
@@ -11,6 +12,17 @@ const HeaderLink = styled(Link)`
   }
 `;
 
+const HeaderLinks = () => (
+  <>
+    <HeaderLink to="/about">About</HeaderLink>
+    <HeaderLink to="/join-us">Join Us</HeaderLink>
+    <HeaderLink to="/volunteer">Volunteer</HeaderLink>
+    <HeaderLink to="/give-back">Give Back</HeaderLink>
+    <HeaderLink to="news-and-events">News & Events</HeaderLink>
+    <HeaderLink to="/contact">Contact</HeaderLink>
+  </>
+);
+
 export default function Header() {
   return (
     <header
@@ -19,7 +31,7 @@ export default function Header() {
         grid-template-columns: 1fr 2fr;
         width: 100%;
         padding: 1.1rem 1.2rem;
-        position: sticky;
+        position: fixed;
         top: 0;
         background-color: #fff;
         z-index: 100;
@@ -47,15 +59,16 @@ export default function Header() {
         className={css`
           display: flex;
           justify-content: space-between;
+          @media (max-width: 940px) {
+            display: none;
+          }
         `}
       >
-        <HeaderLink to="/about">About</HeaderLink>
-        <HeaderLink to="/join-us">Join Us</HeaderLink>
-        <HeaderLink to="/volunteer">Volunteer</HeaderLink>
-        <HeaderLink to="/give-back">Give Back</HeaderLink>
-        <HeaderLink to="news-and-events">News & Events</HeaderLink>
-        <HeaderLink to="/contact">Contact</HeaderLink>
+        <HeaderLinks />
       </nav>
+      <MobilePopup>
+        <HeaderLinks />
+      </MobilePopup>
     </header>
   );
 }
