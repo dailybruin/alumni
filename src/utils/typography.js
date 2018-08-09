@@ -13,7 +13,8 @@ const typography = new Typography({
       styles: ['300'],
     },
   ],
-  bodyFontFamily: ['Raleway', 'Helvetica Neue', 'Helvetica', 'sans-serif'],
+  headerFontFamily: ['Raleway', 'Helvetica Neue', 'Helvetica', 'sans-serif'],
+  bodyFontFamily: ['Source Sans Pro', 'Helvetica', 'sans-serif'],
 });
 
 injectGlobal`

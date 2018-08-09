@@ -59,8 +59,8 @@ const IndexPage = ({ data }) => {
           press.
         </p>
         <Button>Learn More</Button>
-        <Img fluid={data.classOf2018.childImageSharp.fluid} />
       </HomePageSection>
+      <Img fluid={data.classOf2018.childImageSharp.fluid} />
 
       <HomePageSection title="Give Back">
         <p>
@@ -101,7 +101,7 @@ const IndexPage = ({ data }) => {
         />
       </HomePageSection>
 
-      <HomePageSection title="What are alumni up to?">
+      <HomePageSection title="What are alumni up to?" theme={1}>
         <a
           className="twitter-timeline"
           data-height="600"

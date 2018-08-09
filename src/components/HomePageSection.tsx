@@ -17,42 +17,38 @@ export default function HomePageSection(props: any) {
         height: 100%;
       `}
     >
-      <header
+      <div
         className={css`
           max-width: 35rem;
           margin: 0 auto 3rem auto;
           text-align: center;
         `}
       >
-        <div
-          className={css`
-            display: inline-block;
-            width: 6.5rem;
-            height: 0.25rem;
-            margin: 0 0 1.5rem 0;
-            border-radius: 4px;
-            background-color: #4a98e2;
-          `}
-        />
-        <h2
-          className={css`
-            margin: 0;
-            font-size: 2.75rem;
-            line-height: 1.3;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-family: 'Raleway', Helvetica, sans-serif;
-            font-weight: 800;
-          `}
-        >
-          {props.title}
-        </h2>
-      </header>
-      <div
-        className={css`
-          text-align: center;
-        `}
-      >
+        <header className={css``}>
+          <div
+            className={css`
+              display: inline-block;
+              width: 6.5rem;
+              height: 0.25rem;
+              margin: 0 0 1.5rem 0;
+              border-radius: 4px;
+              background-color: #4a98e2;
+            `}
+          />
+          <h2
+            className={css`
+              margin: 0;
+              font-size: 2.75rem;
+              line-height: 1.3;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              font-family: 'Raleway', Helvetica, sans-serif;
+              font-weight: 800;
+            `}
+          >
+            {props.title}
+          </h2>
+        </header>
         {props.children}
       </div>
     </section>
