@@ -36,10 +36,10 @@ export default function NewsAndEventsPage({ data }: any) {
               <h3>Fall</h3>
             </header>
             <p>
-              The Daily Bruin Alumni Association plans to host its first reunion
-              at UCLA in the fall. This will be our formal group launch and will
-              offer a chance to gather in Westwood and hear about the current
-              staff. Stay tuned for more developments!
+              Save the date: The Daily Bruin Alumni Network will host its first
+              reunion and general meeting at UCLA in the fall. This will be our
+              formal group launch and will offer a chance to gather in Westwood
+              and hear about the current staff. Stay tuned for an RSVP link.
             </p>
           </div>
           <Img fluid={image} />
