@@ -28,7 +28,7 @@ export default function Header() {
     <header
       className={css`
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         width: 100%;
         padding: 1.1rem 1.2rem;
         position: fixed;
