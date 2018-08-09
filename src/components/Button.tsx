@@ -11,7 +11,7 @@ const Button = styled('button')`
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.025rem;
-  background-color: #4a98e2;
+  background-color: ${(props: any) => (props.primary ? '#ffcc59' : '#4a98e2')};
   color: #fff;
 `;
 
