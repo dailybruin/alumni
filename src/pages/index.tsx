@@ -1,13 +1,20 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
-import { css } from 'emotion';
+import { graphql, Link } from 'gatsby';
+import styled, { css } from 'react-emotion';
 import Img from 'gatsby-image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 import Button from '../components/Button';
 import CoverPhoto from '../components/CoverPhoto';
 import HomePageSection from '../components/HomePageSection';
 import Footer from '../components/Footer';
 import FeatureQuote from '../components/FeatureQuote';
+
+const Icon = styled(FontAwesomeIcon)`
+  font-size: 5rem;
+`;
 
 export const query = graphql`
   query IndexQuery {
@@ -85,9 +92,24 @@ const IndexPage = ({ data }) => {
             list-style: none;
           `}
         >
-          <li>Join Us</li>
-          <li>Facebook</li>
-          <li>LinkedIn</li>
+          <li>
+            <Link to="/join-us">
+              <Icon icon={faCoffee} />
+              <h3>Join Us</h3>
+            </Link>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/groups/126873934036600/">
+              <Icon icon={faFacebook} />
+              <h3>Facebook</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/groups/2499544/profile">
+              <Icon icon={faLinkedinIn} />
+              <h3>LinkedIn</h3>
+            </a>
+          </li>
         </ul>
       </HomePageSection>
 
