@@ -25,14 +25,15 @@ export default function Footer(props: FooterProps) {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
         text-align: center;
       `}
     >
       <div>
         Content copyright © {props.copyrightYear} Daily Bruin. Site code
         available on{' '}
-        <a href={`https://github.com/dailybruin/${props.githubName}`}>GitHub</a>.
+        <a href={`https://github.com/dailybruin/${props.githubName}`}>GitHub</a>
+        .
       </div>
       <div>
         Built with Suzy’s <Heart /> in Kerckhoff 118 by{' '}
