@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { graphql, Link } from 'gatsby';
-import styled, { css } from 'react-emotion';
+import { css } from 'react-emotion';
 import Img from 'gatsby-image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 import Button from '../components/Button';
@@ -11,10 +10,7 @@ import CoverPhoto from '../components/CoverPhoto';
 import HomePageSection from '../components/HomePageSection';
 import Footer from '../components/Footer';
 import FeatureQuote from '../components/FeatureQuote';
-
-const Icon = styled(FontAwesomeIcon)`
-  font-size: 5rem;
-`;
+import HomePageIconLink from '../components/HomePageIconLink';
 
 export const query = graphql`
   query IndexQuery {
@@ -93,22 +89,25 @@ const IndexPage = ({ data }) => {
           `}
         >
           <li>
-            <Link to="/join-us">
-              <Icon icon={faCoffee} />
-              <h3>Join Us</h3>
-            </Link>
+            <HomePageIconLink
+              icon={faEnvelope}
+              title="Join Us"
+              link="/join-us"
+            />
           </li>
           <li>
-            <a href="https://www.facebook.com/groups/126873934036600/">
-              <Icon icon={faFacebook} />
-              <h3>Facebook</h3>
-            </a>
+            <HomePageIconLink
+              icon={faFacebook}
+              title="Facebook"
+              link="https://www.facebook.com/groups/126873934036600/"
+            />
           </li>
           <li>
-            <a href="https://www.linkedin.com/groups/2499544/profile">
-              <Icon icon={faLinkedinIn} />
-              <h3>LinkedIn</h3>
-            </a>
+            <HomePageIconLink
+              icon={faLinkedinIn}
+              title="LinkedIn"
+              link="https://www.linkedin.com/groups/2499544/profile"
+            />
           </li>
         </ul>
       </HomePageSection>
