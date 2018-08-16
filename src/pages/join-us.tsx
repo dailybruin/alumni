@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import Header from '../components/Header';
 import PageContainer from '../components/PageContainer';
 
 const mailchimpHTML = {
@@ -60,11 +59,8 @@ const mailchimpHTML = {
 
 export default function JoinUsPage() {
   return (
-    <>
-      <Header />
-      <PageContainer title="Join Us">
-        <div dangerouslySetInnerHTML={mailchimpHTML} />
-      </PageContainer>
-    </>
+    <PageContainer title="Join Us">
+      <div dangerouslySetInnerHTML={mailchimpHTML} />
+    </PageContainer>
   );
 }
