@@ -32,9 +32,10 @@ export default function ContactPage({ data }) {
         happenings.
       </p>
       <p>
-        Please email Tanner Walters with any alumni network questions at
-        alumni@dailybruin.com. Tanner graduated in 2018. He was the 2016-17
-        editor in chief and the 2017-18 alumni director.
+        Please email Tanner Walters with any alumni network questions at{' '}
+        <a href="mailto:alumni@dailybruin.com">alumni@dailybruin.com</a>. Tanner
+        graduated in 2018. He was the 2016-17 editor in chief and the 2017-18
+        alumni director.
       </p>
     </PageContent>
   );
