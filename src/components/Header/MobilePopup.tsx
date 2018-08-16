@@ -1,8 +1,14 @@
 import * as React from 'react';
 import { css } from 'emotion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 class MobilePopup extends React.Component<any, any> {
   detailsRef: React.RefObject<HTMLInputElement> = React.createRef();
+
+  state = {
+    open: false,
+  };
 
   componentDidMount() {
     document.addEventListener('mousedown', this.handleClick);
@@ -18,6 +24,8 @@ class MobilePopup extends React.Component<any, any> {
       !this.detailsRef.current.contains(event.target as Node)
     ) {
       this.detailsRef.current.removeAttribute('open');
+    } else {
+      this.setState({ open: !this.state.open });
     }
   };
 
@@ -43,7 +51,7 @@ class MobilePopup extends React.Component<any, any> {
             }
           `}
         >
-          🍔
+          <FontAwesomeIcon icon={this.state.open ? faTimes : faBars} />
         </summary>
         <nav
           className={css`
