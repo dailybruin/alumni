@@ -17,6 +17,7 @@ export default function FeatureQuote(props: FeatureQuote) {
       className={css`
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
         align-items: center;
       `}
     >
