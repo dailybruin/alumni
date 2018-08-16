@@ -27,6 +27,20 @@ export default function Footer(props: FooterProps) {
         justify-content: center;
         margin: 1rem 0;
         text-align: center;
+
+        /* TODO: this should be refactored */
+        a {
+          transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+            box-shadow 0.2s ease-in-out;
+          border-bottom: dotted 1px;
+          text-decoration: none;
+          color: inherit;
+
+          &:hover {
+            border-bottom-color: transparent;
+            color: #4a98e2;
+          }
+        }
       `}
     >
       <div>
