@@ -118,6 +118,19 @@ export default function PageContent(props: PageContentProps) {
               h6 {
                 font-size: 0.7rem;
               }
+
+              a {
+                transition: color 0.2s ease-in-out,
+                  border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                border-bottom: dotted 1px;
+                text-decoration: none;
+                color: inherit;
+
+                &:hover {
+                  border-bottom-color: transparent;
+                  color: #4a98e2;
+                }
+              }
             `}
           >
             {props.children}
