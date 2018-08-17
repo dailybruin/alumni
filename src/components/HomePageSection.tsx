@@ -37,7 +37,7 @@ export default function HomePageSection(props: any) {
           />
           <h2
             className={css`
-              margin: 0;
+              margin: 0 0 1rem;
               font-size: 2.75rem;
               line-height: 1.3;
               text-transform: uppercase;

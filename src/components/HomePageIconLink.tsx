@@ -27,6 +27,7 @@ export default function HomePageIconLink(props: HomePageIconLinkProps) {
       <FontAwesomeIcon
         className={css`
           font-size: 5rem;
+          margin-bottom: 0.6rem;
         `}
         icon={props.icon}
       />
