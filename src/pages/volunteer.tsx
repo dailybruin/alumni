@@ -60,7 +60,7 @@ export default function ContactPage({ data }) {
         2010’s: Nicole Vas '10, Sam Schaefer '11, James Barragan '13, Jillian
         Beck '14, Jose Ubeda '15, Fran Manto '16, Emaan Baqai '17
       </p>
-      <p>2000’s: Sara Randazzo '08, Kelly Rayburn '04</p>
+      <p>2000’s: Sara Randazzo '08, Kelly Rayburn '04, Kate Stanhope '09</p>
       <p>
         1990’s: Missy Anderson '96, Christine Strobel '94, Chris Schreiber '95
       </p>
@@ -69,9 +69,9 @@ export default function ContactPage({ data }) {
       <p>Jillian Beck '14, Gil Hopenstand '97, Don Rosen '86</p>
       <h2>ADDITIONAL DBAN COMMITTEE MEMBERS</h2>
       <p>
-        Alejandra Reyes Velarde '17, Lauren Jow '12, Kate Stanhope '09, Tyson
-        Evans '05, Phil Carter '96, Wendy Witherspoon '90, Nancy McCullough '89,
-        Lauren Bartlett '88, Alice Short '77
+        Alejandra Reyes Velarde '17, Lauren Jow '12, Tyson Evans '05, Phil
+        Carter '96, Wendy Witherspoon '90, Nancy McCullough '89, Lauren Bartlett
+        '88, Alice Short '77
       </p>
     </PageContainer>
   );
