@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Daily Bruin Alumni Network',
+    description: '',
+    url: 'https://alumni.dailybruin.com',
+    twitter: '@dailybruin',
   },
   plugins: [
     'gatsby-plugin-typescript',

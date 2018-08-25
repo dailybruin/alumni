@@ -11,7 +11,6 @@ interface FeatureQuote {
 }
 
 export default function FeatureQuote(props: FeatureQuote) {
-  console.log(props.image);
   return (
     <section
       className={css`
