@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 import { css } from 'react-emotion';
 import Img from 'gatsby-image';
-import { faCoffee, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 import Button from '../components/Button';
