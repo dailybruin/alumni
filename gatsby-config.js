@@ -10,7 +10,7 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
-    'gtasby-plugin-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
