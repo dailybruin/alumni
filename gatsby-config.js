@@ -8,10 +8,11 @@ module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-emotion',
-    'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gtasby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-28181852-27',
         anonymize: true,
