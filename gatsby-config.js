@@ -1,14 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: 'Daily Bruin Alumni Network',
+    description: '',
+    url: 'https://alumni.dailybruin.com',
+    twitter: '@dailybruin',
   },
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-emotion',
-    'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-28181852-27',
         anonymize: true,

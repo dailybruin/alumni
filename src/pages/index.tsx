@@ -5,6 +5,7 @@ import Img from 'gatsby-image';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
+import Head from '../components/Head';
 import Button from '../components/Button';
 import CoverPhoto from '../components/CoverPhoto';
 import HomePageSection from '../components/HomePageSection';
@@ -41,6 +42,7 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
   return (
     <>
+      <Head />
       <CoverPhoto image={data.coverphoto.childImageSharp.fluid} />
       <HomePageSection title="Welcome">
         <p>

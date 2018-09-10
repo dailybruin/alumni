@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { css } from 'emotion';
 import Img from 'gatsby-image';
+import Head from '../components/Head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -13,6 +14,7 @@ interface PageContentProps {
 export default function PageContent(props: PageContentProps) {
   return (
     <>
+      <Head pageTitle={props.title} />
       <Header />
       <section
         className={css`
