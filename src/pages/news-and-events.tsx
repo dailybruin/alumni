@@ -36,7 +36,7 @@ export default function NewsAndEventsPage({ data }: any) {
             first alumni reunion on the UCLA campus this fall! 
           </p>
           <p>
-            <a target="_blank" href="http://giving.ucla.edu/2018DailyBruinReunion">Please RSVP here.</a>
+            <a href="http://giving.ucla.edu/2018DailyBruinReunion">Please RSVP here.</a>
           </p>
           <hr/>
           <p>
@@ -53,7 +53,7 @@ export default function NewsAndEventsPage({ data }: any) {
             game in Pasadena or watch together in Westwood. Location specifics to come.
           </p>
           <p>
-            Questions? Want to see who else is coming? <a target="_blank" href="http://www.facebook.com/events/315031935913662">Check out our Facebook event.</a>
+            Questions? Want to see who else is coming? <a href="http://www.facebook.com/events/315031935913662">Check out our Facebook event.</a>
           </p>
         </div>
       </div>
