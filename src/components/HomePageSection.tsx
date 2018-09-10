@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { css } from 'emotion';
-import Img from 'gatsby-image';
 
 enum Theme {
   LIGHT,
