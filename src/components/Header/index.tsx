@@ -2,13 +2,14 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { css } from 'emotion';
 import styled from 'react-emotion';
+import { colors } from '../../utils/global-styles';
 import MobilePopup from './MobilePopup';
 
 const HeaderLink = styled(Link)`
   color: inherit;
   text-decoration: none;
   :hover {
-    color: #4a98e2;
+    color: colors.blue;
   }
 `;
 
@@ -33,10 +34,10 @@ export default function Header() {
         padding: 1.1rem 1.2rem;
         position: fixed;
         top: 0;
-        background-color: #fff;
+        background-color: ${colors.white};
         z-index: 100;
         box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.125);
-        border-bottom-color: #f3f3f3;
+        border-bottom-color: ${colors.offwhite};
       `}
     >
       <HeaderLink

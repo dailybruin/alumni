@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { css } from 'emotion';
-import Img from 'gatsby-image';
+import { colors } from '../utils/global-styles';
 
 enum Theme {
   LIGHT,
@@ -11,10 +11,12 @@ export default function HomePageSection(props: any) {
   return (
     <section
       className={css`
-        padding: 6rem 3rem 4rem 3rem;
-        background-color: ${props.theme === Theme.DARK ? '#292f33' : '#f3f3f3'};
-        color: ${props.theme === Theme.DARK ? '#fff' : '#3f3f3f'};
+        background-color: ${props.theme === Theme.DARK
+          ? colors.black_background
+          : colors.offwhite};
+        color: ${props.theme === Theme.DARK ? colors.white : colors.black_text};
         height: 100%;
+        padding: 6rem 3rem 4rem 3rem;
       `}
     >
       <div
@@ -24,7 +26,7 @@ export default function HomePageSection(props: any) {
           text-align: center;
         `}
       >
-        <header className={css``}>
+        <header>
           <div
             className={css`
               display: inline-block;
@@ -32,7 +34,7 @@ export default function HomePageSection(props: any) {
               height: 0.25rem;
               margin: 0 0 1.5rem 0;
               border-radius: 4px;
-              background-color: #4a98e2;
+              background-color: ${colors.blue};
             `}
           />
           <h2

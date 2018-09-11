@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { css } from 'react-emotion';
+import { colors } from '../utils/global-styles';
 
 export default function EventModule(props: any) {
   return (
     <section
       className={css`
-        padding: 6rem 3rem 4rem 3rem;
-        background-color: #f3f3f3;
+        background-color: ${colors.offwhite};
         height: 100%;
+        padding: 6rem 3rem 4rem 3rem;
       `}
     >
       <header
