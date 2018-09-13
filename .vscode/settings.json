@@ -2,11 +2,5 @@
   "[html]": {
     "editor.formatOnSave": false,
     "editor.formatOnPaste": false
-  },
-  "files.associations": {
-    "*.html": "jekyll"
-  },
-  "emmet.includeLanguages": {
-    "jekyll": "html"
   }
 }
