@@ -13,13 +13,22 @@ export const query = graphql`
         }
       }
     }
+    scheduleImage: file(relativePath: { regex: "/alumni-schedule.png/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `;
 
 export default function NewsAndEventsPage({ data }: any) {
-  const image = data.eventImage.childImageSharp.fluid;
+  const eventImage = data.eventImage.childImageSharp.fluid;
+  const scheduleImage = data.scheduleImage.childImageSharp.fluid;
+
   return (
-    <PageContainer title="Events" featureImage={image}>
+    <PageContainer title="Events" featureImage={eventImage}>
       <div
         className={css`
           display: grid;
@@ -49,6 +58,13 @@ export default function NewsAndEventsPage({ data }: any) {
             the latest news around campus and how things are going at The Bruin.
             For students, sessions will include a careers panel.
           </p>
+          <p>See the full schedule outlined below:</p>
+          <Img
+            fluid={scheduleImage}
+            className={css`
+              margin-bottom: 1.45rem;
+            `}
+          />
           <p>
             That evening, we will gather in the James West Alumni Center for a
             reception and dinner program, which will feature the Daily Bruin
