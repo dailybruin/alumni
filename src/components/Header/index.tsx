@@ -9,7 +9,7 @@ const HeaderLink = styled(Link)`
   color: inherit;
   text-decoration: none;
   :hover {
-    color: colors.blue;
+    color: ${colors.blue};
   }
 `;
 
