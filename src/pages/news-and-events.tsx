@@ -41,15 +41,17 @@ export default function NewsAndEventsPage({ data }: any) {
             <h3>October 5-6</h3>
           </header>
           <p>
-            The Daily Bruin Alumni Network is excited to host its first alumni
-            reunion on the UCLA campus this fall!
+            Come back to Kerckhoff Hall to reconnect with fellow alumni and meet
+            current Bruin staffers! We can't wait to see you.
           </p>
           <p>
             <a href="http://giving.ucla.edu/2018DailyBruinReunion">
-              Please RSVP here.
+              RSVP here for the Daily Bruin Alumni Network's first reunion!
             </a>
           </p>
           <hr />
+          <h4>Event Details</h4>
+          <h5>Afternoon schedule</h5>
           <p>
             Join us Friday afternoon for an open newsroom and breakout sessions
             with past and present Daily Bruin staffers. Panels will include
@@ -65,12 +67,31 @@ export default function NewsAndEventsPage({ data }: any) {
               margin-bottom: 1.45rem;
             `}
           />
+          <h5>Alumni Dinner and Distinguished Alumni Award</h5>
           <p>
             That evening, we will gather in the James West Alumni Center for a
-            reception and dinner program, which will feature the Daily Bruin
-            Alumni Network's first Distinguished Alumni honoree and updates from
-            the organizational leadership and fundraising committees.
+            reception and dinner program, which will feature Cari Champion, the
+            Daily Bruin Alumni Network's first Distinguished Alumni Award
           </p>
+          <p>
+            Champion is one of only a few African-American women anchoring shows
+            at ESPN, and she has become a trailblazer in media. Described as a
+            “game-changer” by Vogue in 2016, she was one of two women named to
+            Sports Illustrated’s prestigious list of Six to Watch in 2016 and
+            was recently included in the Ebony Power 100 of 2017 for
+            representing women in an industry dominated by men.
+          </p>
+          <p>
+            <a href="https://alumni.ucla.edu/patrick-healy/">Patrick Healy</a>,
+            an NBC4 Southern California reporter and Daily Bruin alumnus, will
+            emcee the dinner.
+          </p>
+          <p>
+            The network will offer updates from the organizational leadership
+            and fundraising committees and there will be plenty of time to enjoy
+            dinner with friends, old and new.
+          </p>
+          <h5>Saturday activities</h5>
           <p>
             Join one of our meet-ups on Saturday, either to tailgate the UCLA
             football game in Pasadena or watch together in Westwood. Location
