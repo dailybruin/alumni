@@ -20,12 +20,20 @@ export const query = graphql`
         }
       }
     }
+    cariImage: file(relativePath: { regex: "/cari.png/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `;
 
 export default function NewsAndEventsPage({ data }: any) {
   const eventImage = data.eventImage.childImageSharp.fluid;
   const scheduleImage = data.scheduleImage.childImageSharp.fluid;
+  const cariImage = data.cariImage.childImageSharp.fluid;
 
   return (
     <PageContainer title="Events" featureImage={eventImage}>
@@ -91,6 +99,12 @@ export default function NewsAndEventsPage({ data }: any) {
             and fundraising committees and there will be plenty of time to enjoy
             dinner with friends, old and new.
           </p>
+          <Img
+            fluid={cariImage}
+            className={css`
+              margin-bottom: 1.45rem;
+            `}
+          />
           <h5>Saturday activities</h5>
           <p>
             Join one of our meet-ups on Saturday, either to tailgate the UCLA
