@@ -53,9 +53,11 @@ export default function NewsAndEventsPage({ data }: any) {
             current Bruin staffers! We can't wait to see you.
           </p>
           <p>
-            <a href="http://giving.ucla.edu/2018DailyBruinReunion">
-              RSVP here for the Daily Bruin Alumni Network's first reunion!
-            </a>
+            We are SOLD OUT of dinner tickets for the Daily Bruin Alumni Network
+            reunion dinner. Please use{' '}
+            <a href="http://giving.ucla.edu/2018DailyBruinReunion">this link</a>{' '}
+            if you are interested in buying tickets to the afternoon sessions
+            only.
           </p>
           <hr />
           <h4>Event Details</h4>
