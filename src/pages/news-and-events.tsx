@@ -53,11 +53,9 @@ export default function NewsAndEventsPage({ data }: any) {
             current Bruin staffers! We can't wait to see you.
           </p>
           <p>
-            We are SOLD OUT of dinner tickets for the Daily Bruin Alumni Network
-            reunion dinner. Please use{' '}
-            <a href="http://giving.ucla.edu/2018DailyBruinReunion">this link</a>{' '}
-            if you are interested in buying tickets to the afternoon sessions
-            only.
+            We are SOLD OUT of afternoon and dinner tickets for the Daily Bruin
+            Alumni Network Reunion. Thank you to all who have RSVPed and
+            expressed interest.
           </p>
           <hr />
           <h4>Event Details</h4>
@@ -82,6 +80,7 @@ export default function NewsAndEventsPage({ data }: any) {
             That evening, we will gather in the James West Alumni Center for a
             reception and dinner program, which will feature Cari Champion, the
             Daily Bruin Alumni Network's first Distinguished Alumni Award
+            winner.
           </p>
           <p>
             Champion is one of only a few African-American women anchoring shows
@@ -114,10 +113,13 @@ export default function NewsAndEventsPage({ data }: any) {
             specifics to come.
           </p>
           <p>
-            Questions? Want to see who else is coming?{' '}
+            Please check out{' '}
             <a href="http://www.facebook.com/events/315031935913662">
-              Check out our Facebook event.
-            </a>
+              our Facebook event
+            </a>{' '}
+            for updates about the reunion or to ask questions. The UCLA Alumni
+            Association will send parking details and directions to all
+            attendees in the days ahead of the event.
           </p>
         </div>
       </div>
