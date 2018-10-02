@@ -80,6 +80,7 @@ export default function NewsAndEventsPage({ data }: any) {
             That evening, we will gather in the James West Alumni Center for a
             reception and dinner program, which will feature Cari Champion, the
             Daily Bruin Alumni Network's first Distinguished Alumni Award
+            winner.
           </p>
           <p>
             Champion is one of only a few African-American women anchoring shows
