@@ -39,9 +39,8 @@ export default function ContactPage({ data }) {
       </ul>
       <h3>Daily Bruin Alumni Network</h3>
       <ul>
-        <li><a href="https://www.facebook.com/groups/dailybruin">Facebook</a></li>
-        <li><a href="https://twitter.com/dailybruin">Twitter</a></li>
-        <li><a href="https://www.instagram.com/dailybruin/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/groups/DailyBruinAlumni/">Official Facebook group</a></li>
+        <li><a href="https://www.linkedin.com/groups/2499544/about">Official LinkedIn group</a></li>
       </ul>
     </PageContent>
   );
