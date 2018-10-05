@@ -21,22 +21,28 @@ export default function ContactPage({ data }) {
   return (
     <PageContent title="Contact" featureImage={featureImage}>
       <p>
-        Over 500 UCLA students staff the Daily Bruin, serving thousands in the
-        campus and Westwood community every day. We hope you’ll join us in
-        staying connected with the campus and your fellow alumni!
+        Here are some resources to stay connected with the Daily Bruin Alumni Network
+        and the current Daily Bruin staff. Please reach out with any questions!
       </p>
-      <p>
-        On social media, please be sure you join the Facebook group for Daily
-        Bruin Alumni. In addition, you can follow the Daily Bruin on Twitter,
-        Facebook and Instagram to keep up with all of the current campus
-        happenings.
-      </p>
-      <p>
-        Please email Tanner Walters with any alumni network questions at{' '}
-        <a href="mailto:alumni@dailybruin.com">alumni@dailybruin.com</a>. Tanner
-        graduated in 2018. He was the 2016-17 editor in chief and the 2017-18
-        alumni director.
-      </p>
+      <h2>Contacts</h2>
+      <ul>
+        <li><a href="mailto:LawrenceMa@alumni.ucla.edu">Lawrence Ma</a>{' '} ('95) Daily Bruin Alumni Network co-chair</li>
+        <li><a href="mailto:tannerbwalters@gmail.com">Tanner Walters</a>{' '} ('18) Daily Bruin Alumni Network co-chair</li>
+        <li><a href="mailto:alumni@dailybruin.com">Jacqueline Alvarez</a>{' '}, 2018-19 Daily Bruin alumni director</li>
+      </ul>
+      <h2>Social Media</h2>
+      <h3>Daily Bruin</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/groups/dailybruin">Facebook</a></li>
+        <li><a href="https://twitter.com/dailybruin">Twitter</a></li>
+        <li><a href="https://www.instagram.com/dailybruin/">Instagram</a></li>
+      </ul>
+      <h3>Daily Bruin Alumni Network</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/groups/dailybruin">Facebook</a></li>
+        <li><a href="https://twitter.com/dailybruin">Twitter</a></li>
+        <li><a href="https://www.instagram.com/dailybruin/">Instagram</a></li>
+      </ul>
     </PageContent>
   );
 }
