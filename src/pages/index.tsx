@@ -63,7 +63,7 @@ const IndexPage = ({ data }) => {
           supporting community programs to advance news literacy and the free
           press.
         </p>
-        <Button>Learn More</Button>
+        <Link to="/about/"><Button>Learn More</Button></Link>
       </HomePageSection>
       <Img fluid={data.classOf2018.childImageSharp.fluid} />
 
@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => {
           bolster its reporting through travel, equipment and scholarship
           opportunities.
         </p>
-        <Button>Give</Button>
+        <Link to="/give-back/"><Button>Give</Button></Link>
       </HomePageSection>
 
       <HomePageSection title="Connect" theme={1}>
