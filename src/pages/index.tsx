@@ -130,7 +130,7 @@ const IndexPage = ({ data }) => {
           data-height="600"
           href="https://twitter.com/tannerbwalters/lists/ucla-daily-bruin-alumni?ref_src=twsrc%5Etfw"
         >
-          A Twitter List by tannerbwalters
+          <Button>A Twitter List by tannerbwalters</Button>
         </a>
       </HomePageSection>
       <Footer

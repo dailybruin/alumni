@@ -63,6 +63,9 @@ export default function ContactPage({ data }) {
         guidance. This team will also work closely with the Daily Bruin's student alumni director to develop
         the best ways to help students.
       </p>
+      <p>To sign up for a critique session, please visit{' '}
+        <a href="https://www.signupgenius.com/go/60b0945a4a72fab9-daily">this site</a>.
+      </p>
       <h2>MEET THE ALUMNI NETWORK</h2>
       <h3>LEADERSHIP TEAM</h3>
       <p>Lawrence Ma '95 & Tanner Walters '18 | Daily Bruin Alumni Network co-chairs</p>
