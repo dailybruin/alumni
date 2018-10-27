@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { css } from 'emotion';
 import Img from 'gatsby-image';
+import { Footer } from '@dailybruin/lux';
 import Head from '../components/Head';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 interface PageContentProps {
   title: string;
@@ -141,7 +141,7 @@ export default function PageContent(props: PageContentProps) {
       </section>
       <Footer
         githubName="alumni"
-        developers={['Nathan Smith']}
+        developers="Nathan Smith"
         copyrightYear={2018}
       />
     </>
