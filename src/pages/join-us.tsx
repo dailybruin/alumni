@@ -10,6 +10,12 @@ const mailchimpHTML = {
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
+<h5 style="text-align: center; padding: 5px; margin: 5px;">Join the Daily Bruin Alumni Network, and stay updated with our launch!</h5>
+<div style="text-align: center">
+	<p style="padding: 0; margin: 0;">Please fill out this form to join our alumni association and to help us build our directory. Share the link with your DB friends, too! For additional details, visit <a href="https://alumni.dailybruin.com">alumni.dailybruin.com</a>.</p>
+	<hr style="padding: 0; margin: 0;>
+	<p style="padding: 0; margin: 0;"><i>Are you interested in being a Class Captain for your graduating year? Please email Tanner Walters at <a href="mailto:alumni@dailybruin.com">alumni@dailybruin.com</a> to discuss our alumni outreach team!</i></p>
+</div>
 <div id="mc_embed_signup">
 <form action="https://dailybruin.us18.list-manage.com/subscribe/post?u=014c63d44740a2918c9745891&amp;id=3dded81acb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
