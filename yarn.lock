@@ -8739,8 +8739,7 @@ react-dom@^16.5.2:
     schedule "^0.5.0"
 
 react-emotion@^9.2.10:
-  version "9.2.10"
-  resolved "https://registry.yarnpkg.com/react-emotion/-/react-emotion-9.2.10.tgz#a90f8ce4509ba1e33e70ffe2240fb25e73cedfc7"
+  version "9.2.12"
   dependencies:
     babel-plugin-emotion "^9.2.10"
     create-emotion-styled "^9.2.8"
